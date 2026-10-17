@@ -1,0 +1,34 @@
+[
+  {
+    "alumniName": "Sarah Chen",
+    "type": "college_identity",
+    "status": "pending",
+    "verificationMethod": "college_record_match",
+    "evidenceRefs": [
+      {
+        "type": "enrollment_id",
+        "referenceId": "NS-2017-CS-084",
+        "label": "Institutional Registration Card",
+        "privateStoragePath": "storage/verification_docs/demo_ns_2017_084.enc"
+      }
+    ],
+    "reviewNote": "",
+    "isDemoData": true
+  },
+  {
+    "alumniName": "David Kalu",
+    "type": "college_identity",
+    "status": "needs_more_info",
+    "verificationMethod": "document_review",
+    "evidenceRefs": [
+      {
+        "type": "diploma_copy",
+        "referenceId": "DIP-2019-EE-112",
+        "label": "Scanned Degree Certificate",
+        "privateStoragePath": "storage/verification_docs/demo_dip_2019_112.enc"
+      }
+    ],
+    "reviewNote": "Please provide official final-semester transcript showing department seal.",
+    "isDemoData": true
+  }
+]

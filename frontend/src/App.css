@@ -1,0 +1,13 @@
+/* Custom helper styles for AlumniConnect Editorial UI */
+@keyframes bounceShort {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.animate-bounce-short {
+  animation: bounceShort 0.4s ease-in-out;
+}

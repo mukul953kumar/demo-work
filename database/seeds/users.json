@@ -1,0 +1,58 @@
+[
+  {
+    "_id": "6ad3d3f067c6c496496838fe",
+    "name": "Dean Alistair Vance (Admin)",
+    "email": "admin@northstar.edu",
+    "role": "admin",
+    "status": "active"
+  },
+  {
+    "_id": "6ad3d3f067c6c496496838ff",
+    "name": "Alex Rivera",
+    "email": "student1@northstar.edu",
+    "role": "student",
+    "status": "active"
+  },
+  {
+    "_id": "6ad3d3f067c6c49649683900",
+    "name": "Priya Sharma",
+    "email": "student2@northstar.edu",
+    "role": "student",
+    "status": "active"
+  },
+  {
+    "_id": "6ad3d3f067c6c49649683901",
+    "name": "Marcus Vance",
+    "email": "marcus.vance@northstar.edu",
+    "role": "alumni",
+    "status": "active"
+  },
+  {
+    "_id": "6ad3d3f067c6c49649683902",
+    "name": "Dr. Elena Rostova",
+    "email": "elena.rostova@northstar.edu",
+    "role": "alumni",
+    "status": "active"
+  },
+  {
+    "_id": "6ad3d3f067c6c49649683903",
+    "name": "Sarah Chen",
+    "email": "sarah.chen@northstar.edu",
+    "role": "alumni",
+    "status": "active"
+  },
+  {
+    "_id": "6ad3d3f067c6c49649683904",
+    "name": "David Kalu",
+    "email": "david.kalu@northstar.edu",
+    "role": "alumni",
+    "status": "active"
+  },
+  {
+    "_id": "6ad3d3f067c6c49649683905",
+    "name": "Anita Desai",
+    "email": "anita.desai@northstar.edu",
+    "role": "alumni",
+    "status": "active"
+  }
+]
