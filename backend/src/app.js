@@ -13,18 +13,24 @@ app.use(helmet());
 
 // CORS configuration
 const allowedOrigins = [
-  env.CLIENT_ORIGIN || 'http://localhost:5173',
+  env.CLIENT_ORIGIN,
   'http://localhost:5173',
-  'http://localhost:5174'
-];
+  'http://localhost:5174',
+  'https://alumniconnectiitd.vercel.app'
+].filter(Boolean);
 
 app.use(
   cors({
     origin: (origin, callback) => {
-      if (!origin || allowedOrigins.includes(origin)) {
+      if (
+        !origin ||
+        env.CLIENT_ORIGIN === '*' ||
+        allowedOrigins.includes(origin) ||
+        origin.endsWith('.vercel.app')
+      ) {
         callback(null, true);
       } else {
-        callback(new Error('CORS origin denied'));
+        callback(new Error(`CORS origin ${origin} denied`));
       }
     },
     credentials: true,

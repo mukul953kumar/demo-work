@@ -1,4 +1,7 @@
-const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api/v1';
+const RAW_URL = (import.meta.env.VITE_API_URL || 'http://localhost:5000/api/v1').trim();
+const BASE_URL = RAW_URL.replace(/\/+$/, '').endsWith('/api/v1')
+  ? RAW_URL.replace(/\/+$/, '')
+  : `${RAW_URL.replace(/\/+$/, '')}/api/v1`;
 
 async function request(endpoint, options = {}) {
   const token = localStorage.getItem('alumniconnect_token');

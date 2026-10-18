@@ -75,3 +75,5 @@ desktop.ini
 *.njsproj
 *.sln
 *.sw?
+.agents/
+generate_git_history.ps1
